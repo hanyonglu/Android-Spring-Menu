@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+        
+        <RelativeLayout 
+            android:id="@+id/layout_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_main_1">
+            
+        </RelativeLayout>
+            
+        <com.spring.menu.control.ShrinkRelativeLayout
+            android:id="@+id/menus_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="120dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:focusable="true"
+            android:clipChildren="false"
+            android:clipToPadding="false" >
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/menu_camera"
+                android:visibility="gone" />
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/menu_with"
+                android:visibility="gone"/>
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="110dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_place" />
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="160dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_music" />
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_thought"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="210dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_thought" />
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="260dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_sleep" />
+        </com.spring.menu.control.ShrinkRelativeLayout>    
+
+        <com.spring.menu.control.ShrinkRelativeLayout
+            android:id="@+id/relativelayout_shrink"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_center_button" >
+
+            <ImageView
+                android:id="@+id/imageview_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/menu_icn_plus" />
+        </com.spring.menu.control.ShrinkRelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
